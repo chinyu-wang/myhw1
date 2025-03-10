@@ -9,23 +9,61 @@
 		td { text-align: center; padding: 10px; }
 		.r_img { border-radius: 50%; width:300px; height: 300px; }
 		.r_img1 { border-radius: 20px;  }
+
+		iframe { border-radius: 20px;  }
+
 		.large_font { font-size: 50px; }
 		.large_font1 { font-size: 30px; }
 		.large_font1:hover { background-color: black; color:white;  }
 		.r_img:hover { rotate:10deg; opacity: 50%; }
+
+
+		.navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		  position: fixed; /* Set the navbar to fixed position */
+		  top: 0; /* Position the navbar at the top of the page */
+		  width: 100%; /* Full width */
+		}
+
+		/* Links inside the navbar */
+		.navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		/* Change background on mouse-over */
+		.navbar a:hover {
+		  background: #ddd;
+		  color: black;
+		}
+
+
 	</style>
 </head>
 <body>
-	
+
+<div class="navbar">
+  <a href="#home">回首頁</a>
+  <a href="#s1">台中國家歌劇院</a>
+  <a href="#s2">台中州廳</a>
+  <a href="#s3">審計新村</a>
+</div>
+
 <div id="container">
 	<table>
 		<tr>
 			<td colspan="2">
 				<p>
+					<br>
 					<font class="large_font">台中市景點推薦</font>
 				</p>
 				<p>
-					<img src="00.jpeg" class="r_img1">
+					<iframe frameborder="0" src="slideshow.html" width="1024" height="350"></iframe>
 				</p>
 			</td>
 		</tr>
@@ -40,9 +78,10 @@
 		
 		<tr>
 			<td>
-				<img src="01.jpeg" class="r_img">
+				<img id="s1" src="01.jpeg" class="r_img">
 			</td>
 			<td>
+				<br>
 				<p class="large_font1">台中國家歌劇院</p>
 				<p>台中國家歌劇院位於台中市西屯區，是極具特色的大型公有展演空間，由日本建築師伊東豊雄設計，以人類最原始的「洞窟」、「地穴」的概念設計成世界獨一無二的美聲涵洞曲牆建築，歷時五年時間完成、耗資43.6億元，終在2014年11月23日落成啟用，內部規劃有大劇院、中劇院及小型實驗劇場，共可容納約三千餘人。</p>
 				<p>圖：台中國家歌劇院白天景色</p>
@@ -61,13 +100,13 @@
 
 			</td>
 			<td>
-				<img src="02.jpeg" class="r_img">
+				<img  id="s2" src="02.jpeg" class="r_img">
 			</td>
 		</tr>
 
 		<tr>
 			<td>
-				<img src="03.jpeg" class="r_img">
+				<img  id="s3" src="03.jpeg" class="r_img">
 			</td>
 			<td>
 				<p class="large_font1">審計新村</p>
@@ -76,6 +115,12 @@
 				<p>圖：審計新村</p>
 
 				<p>所在位置：台中市西區民生路368巷	</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">
+				<iframe frameborder="0" src="https://www.google.com/maps/d/embed?mid=1ZrR2eKA8kDHlXQGzVh5cUWdWfhi2zTc&ehbc=2E312F" width="900" height="600"></iframe>
 			</td>
 		</tr>
 
